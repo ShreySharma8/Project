@@ -49,7 +49,7 @@ const Todo = () => {
                     onChange={handleCurrentTask}
                 />
                 <button
-                    className="text-bold bg-lime-500 p-1 rounded"
+                    className="text-bold bg-white p-1 rounded"
                     onClick={handleAddTodo}
                 >
                     Add Task
@@ -60,8 +60,8 @@ const Todo = () => {
 
                 {
                     todoList.map((task, index) => (
-                        <li key={index} className="flex gap-2 justify-between p-2 bg-orange-300 rounded-lg">
-                            <p className="text-[20px]">
+                        <li key={index} className="flex gap-2 justify-between p-2 bg-slate-500 rounded-lg">
+                            <p className="text-[20px] text-white">
                                 {task}
                             </p>
                             <button
@@ -71,7 +71,7 @@ const Todo = () => {
                                 Remove
                             </button>
 
-                            <button className="text-bold bg-purple-500 p-1 rounded" onClick={()=>handleUpdateTodo(index, updateValue)}>
+                            <button className="text-bold text-white bg-black p-1 rounded" onClick={()=>handleUpdateTodo(index, updateValue)}>
                                 Update
                             </button>
                         </li>

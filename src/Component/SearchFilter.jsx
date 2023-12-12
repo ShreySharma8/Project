@@ -44,7 +44,7 @@ const SearchFilter = () =>{
 
             <input type="text"
             value={searchText}
-            className="w-[500px] p-1 m-1 rounded bg-slate-400"
+            className="w-[500px] p-1 m-1 rounded "
             onChange={handleSearch}
             
             />
@@ -52,7 +52,7 @@ const SearchFilter = () =>{
             <ul className="w-full p-2 shadow mt-2">
                 {
                    result && result.map((result,index)=>(
-                        <li key={index} className="bg-yellow-300 text-[20px] rounded-lg text-black mb-1 px-2">{result}</li>
+                        <li key={index} className="bg-slate-500 text-[20px] rounded-lg text-white mb-1 px-2">{result}</li>
                     ))
                 }
             </ul>

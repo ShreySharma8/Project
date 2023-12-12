@@ -9,8 +9,8 @@ const Homepage = ({navData}) => {
             {
               navData && navData.map((item, index) =>{
                     return(
-                        <li key={index} className="border-4 rounded-lg border-black p-4 text-center bg-red-400">
-                            <Link to={item.URL} className="text-xl text-yellow-200 font-semibold">
+                        <li key={index} className="border-4 rounded-xl border-black shadow-lg p-4 text-center bg-red-400">
+                            <Link to={item.URL} className="text-xl text-black font-semibold">
                                 {item.label}
                             </Link>
                         </li>
