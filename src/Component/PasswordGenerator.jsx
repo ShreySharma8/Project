@@ -48,7 +48,7 @@ const PasswordGenerator = () => {
 
     return(
         <>
-         <div className="bg-slate-600 p-4 shadow-lg rounded w-full">
+         <div className="bg-slate-600 p-4 shadow-lg rounded w-1/2">
             
             <CustomTitle titleText="Password Generator" />
 

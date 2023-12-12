@@ -39,7 +39,7 @@ const SearchFilter = () =>{
     }
 
     return(
-        <div className="border-2 rounded-xl p-6 bg-black  m-5">
+        <div className="border-2 w-1/2 rounded-xl p-6 bg-black  m-5">
             <h1 className="text-[25px] text-white">Search Filter</h1>
 
             <input type="text"

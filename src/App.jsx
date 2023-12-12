@@ -36,7 +36,7 @@ function App() {
     <BrowserRouter>
       <Navbar navData={navList} />
       <Routes>
-        <Route path='/' element={<Homepage />} />
+        <Route path='/' element={<Homepage navData={navList} />} />
         <Route path='/PasswordGenerator' element={<PasswordGenerator />} />
         <Route path='/Todo' element={<Todo />} />
         <Route path='/SearchFilter' element={<SearchFilter />} />
