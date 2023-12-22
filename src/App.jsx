@@ -6,6 +6,7 @@ import Todo from './Component/Todo';
 import PasswordGenerator from './Component/PasswordGenerator'
 import SearchFilter from './Component/SearchFilter';
 import BgChanger from './Component/BackgroundColor';
+import Form from './Component/Form';
 
 function App() {
 
@@ -30,6 +31,10 @@ function App() {
       URL: "/BgChanger",
       label: "BgChanger",
     },
+    {
+      URL:"/Form",
+      label: "Form",    
+    },
     
 ] 
   return (
@@ -41,6 +46,7 @@ function App() {
         <Route path='/Todo' element={<Todo />} />
         <Route path='/SearchFilter' element={<SearchFilter />} />
         <Route path='/BgChanger' element={<BgChanger />} />
+        <Route path='/Form' element={<Form/>} />
       </Routes>
     </BrowserRouter>
 
