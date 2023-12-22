@@ -39,7 +39,7 @@ const Todo = () => {
 
     return (
         <div className="w-1/2 p-4 bg-black rounded-lg m-5">
-            <h1 className="p-1  text-white text-[20px]">My Todo List</h1>
+            <h1 className="p-1  text-white text-[20px]">My To Do List</h1>
             <div className="flex gap-3 items-stretch justify-between">
                 <input
                     type="text"
