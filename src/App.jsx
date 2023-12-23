@@ -8,6 +8,9 @@ import SearchFilter from './Component/SearchFilter';
 import BgChanger from './Component/BackgroundColor';
 import Form from './Component/Form.jsx'
 import MyContacts from './Component/MyContact';
+import { useSelector } from 'react-redux';
+import { increment, decrement, incrementByAmt } from './store/counterSlice.js';
+import { useDispatch  } from 'react-redux';
 
 function App() {
 
@@ -41,9 +44,18 @@ function App() {
       label: "MyContact",    
     },
 ] 
+
+  const count = useSelector((state) => state.counter.value );
+  const dispatchEvent = useDispatch();
   return (
     <BrowserRouter>
       <Navbar navData={navList} />
+      <div className='text-3xl text-orange-400 flex justify-center'>
+         <button className='text-black font-bold text-xl' onClick={()=> dispatchEvent(increment())}>Increment</button>
+         {count}
+         <button className='text-black font-bold text-xl' onClick={()=> dispatchEvent(decrement())}>Decrement</button>
+         <button className='text-black font-bold text-xl' onClick={()=> dispatchEvent(incrementByAmt(5))}> IncrementByAmt</button>
+      </div>
       <Routes>
         <Route path='/' element={<Homepage navData={navList} />} />
         <Route path='/PasswordGenerator' element={<PasswordGenerator />} />

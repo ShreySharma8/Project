@@ -6,6 +6,15 @@ import axios from "axios";
 // DELETE - delete data (id required) /api/:id
 // PUT - Update data (id & body required) /api/:id
 
+// 1. Create user from component
+// 2. Show user count in navbar
+// 3. Add search filter in navbar
+// 4. Filter by gender
+// 5. Custom modal to view user data
+// 6. Update user form component with pre-filled data
+// 7. Add loading animation
+
+
 const MyContacts = () => {
     const [contacts, setContacts] = useState([]);
     const [userName, setUserName] = useState('');
