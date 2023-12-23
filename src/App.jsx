@@ -6,7 +6,8 @@ import Todo from './Component/Todo';
 import PasswordGenerator from './Component/PasswordGenerator'
 import SearchFilter from './Component/SearchFilter';
 import BgChanger from './Component/BackgroundColor';
-import Form from './Component/Form';
+import Form from './Component/Form.jsx'
+import MyContacts from './Component/MyContact';
 
 function App() {
 
@@ -35,7 +36,10 @@ function App() {
       URL:"/Form",
       label: "Form",    
     },
-    
+    {
+      URL:"/MyContact",
+      label: "MyContact",    
+    },
 ] 
   return (
     <BrowserRouter>
@@ -47,6 +51,7 @@ function App() {
         <Route path='/SearchFilter' element={<SearchFilter />} />
         <Route path='/BgChanger' element={<BgChanger />} />
         <Route path='/Form' element={<Form/>} />
+        <Route path='/MyContact' element={<MyContacts />} />
       </Routes>
     </BrowserRouter>
 

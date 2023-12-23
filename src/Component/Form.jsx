@@ -35,7 +35,7 @@ const SignInForm = () => {
                   <div className="flex flex-col">
                     <label htmlFor="email" className="text-white mb-1">Email ID</label>
                     <Field
-                      className="border p-2 rounded-md focus:outline-none focus:border-blue-500"
+                      className="border text-black p-2 rounded-md focus:outline-none focus:border-blue-500"
                       type="email"
                       name="email"
                       id="email"
@@ -46,7 +46,7 @@ const SignInForm = () => {
                   <div className="flex flex-col gap-2">
                     <label htmlFor="password" className="text-white">Password</label>
                     <Field
-                      className="border p-2 rounded-md focus:outline-none focus:border-blue-500"
+                      className="border p-2 text-black rounded-md focus:outline-none focus:border-blue-500"
                       type="password"
                       name="password"
                       id="password"
